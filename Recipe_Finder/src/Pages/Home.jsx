@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import SearchBar from "../components/SearchBar";
-import RecipeGrid from "../components/RecipeGrid";
-import StatusMessage from "../components/StatusMessage";
-import { searchByName, searchByIngredient } from "../api/mealdb";
+import SearchBar from "../Components/SearchBar";
+import RecipeGrid from "../Components/RecipeGrid";
+import StatusMessage from "../Components/StatusMessage";
+import { searchByName, searchByIngredient } from "../API/mealdb";
 
 function Home({ favorites, onToggleFavorite }) {
   const [query, setQuery] = useState("chicken");
