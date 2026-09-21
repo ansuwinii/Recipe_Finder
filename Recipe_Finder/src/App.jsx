@@ -1,9 +1,9 @@
 import { BrowserRoutes, Routes, Route } from "react-router-dom";
 
 import Navbar from "./Components/Navbar";
-import Home from "./pages/Home";
-import RecipeDetails from "./pages/RecipeDetails";
-import Favorites from "./pages/Favorites";
+import Home from "./Pages/Home";
+import RecipeDetails from "./Pages/RecipeDetails";
+import Favorites from "./Pages/Favorites";
 import { useLocalStorage } from "./Hooks/useLocalStorage";
 
 import './App.css'
