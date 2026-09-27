@@ -1,4 +1,3 @@
-// RecipeCard.jsx
 import { Link } from "react-router-dom";
 
 function RecipeCard({ recipe, isFavorite, onToggleFavorite }) {
@@ -22,4 +21,5 @@ function RecipeCard({ recipe, isFavorite, onToggleFavorite }) {
     </article>
   );
 }
+
 export default RecipeCard;

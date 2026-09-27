@@ -1,4 +1,3 @@
-// RecipeGrid.jsx
 import RecipeCard from "./RecipeCard";
 
 function RecipeGrid({ recipes, favorites, onToggleFavorite }) {
@@ -15,4 +14,5 @@ function RecipeGrid({ recipes, favorites, onToggleFavorite }) {
     </div>
   );
 }
+
 export default RecipeGrid;
