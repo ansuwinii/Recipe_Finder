@@ -42,29 +42,29 @@ A single-page React application that lets users search for recipes by name or in
 ## Project Structure
 
 ```
-recipe-finder/
+Recipe-Finder/
 ├── public/
 ├── src/
-│   ├── api/
+│   ├── API/
 │   │   └── mealdb.js          # All TheMealDB API calls in one place
-│   ├── components/
+│   ├── Components/
 │   │   ├── Navbar.jsx
 │   │   ├── SearchBar.jsx
 │   │   ├── RecipeCard.jsx
 │   │   ├── RecipeGrid.jsx
 │   │   └── StatusMessage.jsx
-│   ├── hooks/
+│   ├── Hooks/
 │   │   └── useLocalStorage.js # Custom hook to sync state with localStorage
-│   ├── pages/
+│   ├── Pages/
 │   │   ├── Home.jsx
 │   │   ├── RecipeDetails.jsx
 │   │   └── Favorites.jsx
-│   ├── utils/
+│   ├── Utils/
 │   │   └── getIngredients.js  # Turns strIngredient1..20 fields into a clean list
 │   ├── App.jsx                # Routing + favorites state (shared across pages)
 │   ├── main.jsx
 │   └── index.css
-├── screenshots/
+├── screenshot/
 ├── package.json
 └── README.md
 ```
@@ -116,12 +116,12 @@ No API key or environment variables are required — TheMealDB's free test endpo
 
 ## Screenshots
 
-![Home page with search results](./screenshot/home.png)
+![Home page with search results](./Recipe_Finder/screenshot/home.png)
 
-![Recipe details page](./screenshot/detail.png)
-![Recipe details page](./screenshot/details.png)
+![Recipe details page](./Recipe_Finder/screenshot/detail.png)
+![Recipe details page](./Recipe_Finder/screenshot/details.png)
 
-![Favorites page](./screenshot/favourites.png)
+![Favorites page](./Recipe_Finder/screenshot/favourites.png)
 
 ---
 
