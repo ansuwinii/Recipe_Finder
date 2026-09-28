@@ -42,24 +42,24 @@ A single-page React application that lets users search for recipes by name or in
 ## Project Structure
 
 ```
-recipe-finder/
+Recipe-Finder/
 ├── public/
 ├── src/
-│   ├── api/
+│   ├── API/
 │   │   └── mealdb.js          # All TheMealDB API calls in one place
-│   ├── components/
+│   ├── Components/
 │   │   ├── Navbar.jsx
 │   │   ├── SearchBar.jsx
 │   │   ├── RecipeCard.jsx
 │   │   ├── RecipeGrid.jsx
 │   │   └── StatusMessage.jsx
-│   ├── hooks/
+│   ├── Hooks/
 │   │   └── useLocalStorage.js # Custom hook to sync state with localStorage
-│   ├── pages/
+│   ├── Pages/
 │   │   ├── Home.jsx
 │   │   ├── RecipeDetails.jsx
 │   │   └── Favorites.jsx
-│   ├── utils/
+│   ├── Utils/
 │   │   └── getIngredients.js  # Turns strIngredient1..20 fields into a clean list
 │   ├── App.jsx                # Routing + favorites state (shared across pages)
 │   ├── main.jsx
