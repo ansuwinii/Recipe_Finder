@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Hero from "../Components/Hero";
 import SearchBar from "../Components/SearchBar";
 import RecipeGrid from "../Components/RecipeGrid";
 import StatusMessage from "../Components/StatusMessage";
@@ -37,18 +38,21 @@ function Home({ favorites, onToggleFavorite }) {
   }, [query, mode]);
 
   return (
-    <section>
-      <SearchBar mode={mode} onModeChange={setMode} onSearch={setQuery} />
+    <>
+      <Hero />
+      <section className="container">
+        <SearchBar mode={mode} onModeChange={setMode} onSearch={setQuery} />
 
-      {status === "loading" && <StatusMessage type="loading" message="Loading recipes..." />}
-      {status === "error" && <StatusMessage type="error" message={errorMessage} />}
-      {status === "success" && recipes.length === 0 && (
-        <StatusMessage type="empty" message={`No recipes found for "${query}".`} />
-      )}
-      {status === "success" && recipes.length > 0 && (
-        <RecipeGrid recipes={recipes} favorites={favorites} onToggleFavorite={onToggleFavorite} />
-      )}
-    </section>
+        {status === "loading" && <StatusMessage type="loading" message="Loading recipes..." />}
+        {status === "error" && <StatusMessage type="error" message={errorMessage} />}
+        {status === "success" && recipes.length === 0 && (
+          <StatusMessage type="empty" message={`No recipes found for "${query}".`} />
+        )}
+        {status === "success" && recipes.length > 0 && (
+          <RecipeGrid recipes={recipes} favorites={favorites} onToggleFavorite={onToggleFavorite} />
+        )}
+      </section>
+    </>
   );
 }
 
